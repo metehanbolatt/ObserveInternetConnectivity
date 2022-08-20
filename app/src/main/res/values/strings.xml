@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ObserveInternetConnectivity</string>
+    <string name="wifi_image">Wifi Image</string>
+    <string name="connected">You are connected.</string>
+    <string name="not_connected">You are NOT connected.</string>
 </resources>

@@ -8,10 +8,11 @@ import android.os.Build
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 import javax.inject.Inject
+import javax.inject.Singleton
 
 class ListenNetwork @Inject constructor(connectivityManager: ConnectivityManager) {
 
-    val isConnected = callbackFlow<Boolean> {
+    val isConnected = callbackFlow {
 
         val callback = object: ConnectivityManager.NetworkCallback() {
             override fun onAvailable(network: Network) {
